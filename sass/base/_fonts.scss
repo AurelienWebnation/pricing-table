@@ -1,0 +1,19 @@
+$inter-path: "../../public/fonts/inter";
+
+@font-face {
+  font-family: "Inter";
+  src: url(#{$inter-path}/Inter-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(#{$inter-path}/Inter-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(#{$inter-path}/Inter-SemiBold.otf);
+  font-weight: 600;
+}
