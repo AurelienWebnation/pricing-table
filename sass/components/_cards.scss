@@ -1,0 +1,41 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: $medium-space;
+}
+
+.card {
+  border: 1px solid;
+  padding: $medium-space;
+  border-radius: 20px;
+
+  &__heading {
+    margin-bottom: $large-space;
+    display: flex;
+    gap: $small-space;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $medium-space;
+
+    p {
+      color: #A9A9AA;
+      font-size: 1.375rem;
+    }
+
+    ul {
+      display: flex;
+      gap: $medium-space;
+      flex-direction: column;
+    }
+
+    li::before {
+      content: url("../../public/img/check.png");
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
