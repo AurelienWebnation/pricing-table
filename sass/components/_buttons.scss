@@ -1,0 +1,29 @@
+.btn {
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  padding: 0.75em 0;
+  font-size: $medium-font;
+  cursor: pointer;
+  transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--light {
+    color: $color-primary;
+    background-color: $color-secondary;
+    &:hover {
+      background-color: darken($color-secondary, 1%);
+    }
+  }
+
+  &--dark {
+    color: $color-light;
+    background-color: $color-primary;
+    box-shadow: 0 12px 32px rgba(255, 29, 137, 0.5);
+    &:hover {
+      background-color: lighten($color-primary, 15%);
+    }
+  }
+}
