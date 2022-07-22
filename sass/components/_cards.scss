@@ -1,13 +1,18 @@
 .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: $medium-space;
+  box-shadow: $card-shadow;
+  border-radius: $card-radius;
 }
 
 .card {
-  border: 1px solid;
   padding: $medium-space;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: min(100%, 384px);
 
   &__heading {
     margin-bottom: $large-space;
@@ -22,20 +27,48 @@
 
     p {
       color: #A9A9AA;
-      font-size: 1.375rem;
+      font-size: $medium-font;
     }
 
     ul {
       display: flex;
       gap: $medium-space;
       flex-direction: column;
+      font-size: $small-font;
     }
 
     li::before {
-      content: url("../../public/img/check.png");
+      content: url("../../public/img/check.svg");
       display: inline-block;
       margin-right: 10px;
       vertical-align: middle;
+    }
+  }
+
+  &__pricing {
+    display: flex;
+    flex-direction: column;
+    gap: $medium-space;
+
+    .recurrence {
+      font-weight: normal;
+      font-size: $small-font;
+    }
+  }
+
+  &--dark {
+    color: #fff;
+    background: #0B0641;
+    border-radius: $card-radius;
+    box-shadow: $card-shadow;
+    animation: bounceY 2s ease-in-out forwards infinite alternate;
+
+    & > .content {
+      width: min(100%, 281px);
+    }
+
+    li::before {
+      content: url("../../public/img/check-light.svg");
     }
   }
 }

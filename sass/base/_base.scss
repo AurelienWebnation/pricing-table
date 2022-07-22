@@ -1,6 +1,7 @@
 .container {
-  width: min(100%, 1200px);
+  width: min(95%, 1200px);
   margin: 0 auto;
+  padding: 5em 0;
 }
 
 body {
@@ -13,9 +14,15 @@ h2 {
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: $small-font;
 }
 
 li {
   list-style-type: none;
+}
+
+hr {
+  margin: $small-space 0;
+  border: none;
+  border-top: 1px dashed #A9A9AA;
 }
