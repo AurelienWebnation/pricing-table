@@ -1,5 +1,22 @@
 .home {
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 40px * 2;
+
+    & > h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    & > p {
+      text-align: center;
+      color: $light-grey;
+    }
+  }
 }
